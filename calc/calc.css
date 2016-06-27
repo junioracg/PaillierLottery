@@ -1,0 +1,146 @@
+body{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url("old-calculator.jpg");
+    background-size: 300vmin 198.75vmin;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    overflow: hidden;
+}
+.content{
+    height: 100vh;
+    width: 100vmin;
+    margin:auto;
+    top: 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    border:1px solid #000000;
+}
+
+.content > div{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    left: 0;
+    margin-bottom: 2.5%;
+}
+.visor{
+    top: 0;
+}
+
+.screenTop{
+    top: 1vh;
+    left: 3%;
+    height: 5h;
+    width: 90%;
+}
+
+.screenBot{
+    top: 12vh;
+    height: 12vh;
+    text-align:right;
+    right: 3%;
+    left: 4%;
+    width: 93%;
+    font-size: 10vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.screen > div{
+    position: relative;
+    font-weight: normal;
+}
+
+.operations .operation{
+    height: 30%;
+    margin-top: 2.5%;
+    width: 100%;
+}
+.operations .operation *{
+    width: 30%;
+    height: 100%;
+    margin-left: 2%;
+    text-align: center;
+    display: inline-block;
+}
+
+.operations .operation .button{
+    line-height: 9vh;
+    box-shadow:inset 0px 5vh 0px 0px #b54b3a;
+}
+
+.operations .operation select{
+    border-radius: 0;
+}
+
+.visor > div {
+    position: absolute;
+    top: 2%;
+    margin-left: 1%;
+}
+
+.screen{
+    display: inline-block;
+    background-color: #5500CC;
+    box-shadow:inset 0px 5vh 0px 0px #3300AA;
+    border:1px solid #241d13;
+    width: 70%;
+    margin-top: 1vh;
+    height: 27.4vh;
+}
+.buttons {
+    display: inline-block;
+    left: 71%;
+    width: 26%;
+    height: 27.4vh;
+}
+
+.visor .button{
+    width: 100%;
+    box-shadow:inset 0px 7vh 0px 0px #b54b3a;
+    line-height: 13vh;
+    margin-top: 1vh;
+}
+
+.button {
+    display: block;
+	box-shadow:inset 0px 15vh 0px 0px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+    text-align: center;
+}
+.button:hover {
+	background-color:#b34332;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+select{
+    background-color: #222222;
+    box-sizing:border-box;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+*{
+    font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+    color: white;
+    box-sizing:border-box;
+}
+
+input{
+    border-radius: 0;
+    border: 1px solid black;
+    background-color: #222222;
+}

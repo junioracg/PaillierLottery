@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homomorphic Encrypted Lottery</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="../lib/sjcl.min.js"></script>
+    <script type="text/javascript" src="../lib/jsbn.js"></script>
+    <script type="text/javascript" src="../lib/paillier.js"></script>
+    <link rel="stylesheet" href="lottery.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <div class="content">
+        <div class="steps">
+            <div class="step">
+                <div class="line">
+                    <h>Simulação de Loteria Utilizando Criptografia Homomórfica</h>
+                </div>
+                <div class="line">
+                    <p>
+                        Faça algumas apostas e observe como os resultados são armazenados no acumulador.
+                    </p>
+                </div>
+                <div class="line">
+                    <div class="button" onclick="apostaRnd()">
+                        Aposta Aleatória
+                    </div>
+                    <div class="button" id="encAcumulador">
+                        Decifrar Apostas
+                    </div>
+                    <div class="button" onclick="reiniciar()">
+                        Reiniciar
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="line">
+                    <h>Faça sua aposta:</h>
+                </div>
+                <div class="line">
+                    <input id="N1A" type="number" name="name" value="">
+                    <input id="N2A" type="number" name="name" value="">
+                    <input id="N3A" type="number" name="name" value="">
+                    <input id="N4A" type="number" name="name" value="">
+                    <input id="N5A" type="number" name="name" value="">
+                </div>
+                <div class="line">
+                    <div class="lineCenter button" onclick="apostar()">
+                        Apostar
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="line">
+                    <h>Estado da Loteria:</h>
+                </div>
+                <div class="line">
+                    <div class="descText">Acumulador de apostas:</div>
+                    <div id="acumulador" class="vetor">
+
+                    </div>
+                </div>
+                <div class="line">
+                    <div class="descText">Vetor de posições:</div>
+                    <div id="posicoes" class="vetor">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="lottery.js"></script>
+</body>
+
+</html>

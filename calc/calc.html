@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homomorphic Encrypted Calculator</title>
+        <script type="text/javascript" src="../lib/sjcl.min.js"></script>
+        <script type="text/javascript" src="../lib/jsbn.js"></script>
+        <script type="text/javascript" src="../lib/paillier.js"></script>
+        <link rel="stylesheet" href="calc.css" media="screen" title="no title" charset="utf-8">
+    </head>
+    <body>
+        <div class="content">
+            <div class="visor">
+                <div class="screen">
+                    <div id="screenTop" class="screenTop">
+                        Generate Keys to Start
+                    </div>
+                    <div id="screenBot" class="screenBot">
+                        0
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button" id="encScreen">Encrypt</div>
+                    <div class="button" id="clear">Clear</div>
+                </div>
+            </div>
+            <div class="operations">
+                <div class="operation">
+                    <select id="op1op1" name="op1">
+                        <option value="x">X</option>
+                        <option value="y">Y</option>
+                        <option value="z">Screen</option>
+                    </select>
+                    <div class="button" onClick="soma()">+</div>
+                    <select id="op1op2" name="op2">
+                        <option value="x">X</option>
+                        <option value="y">Y</option>
+                        <option value="z">Screen</option>
+                    </select>
+                </div>
+                <div class="operation">
+                    <select id="op2op1" name="op1">
+                        <option value="x">X</option>
+                        <option value="y">Y</option>
+                        <option value="z">Screen</option>
+                    </select>
+                    <div class="button" onClick="mul()">x</div>
+                    <input id="op2op2" type="number" name="op2" value="10">
+                </div>
+                <div class="operation">
+                    <select id="op3op1" name="op1">
+                        <option value="x">X</option>
+                        <option value="y">Y</option>
+                        <option value="z">Screen</option>
+                    </select>
+                    <div class="button" onClick="store()">=</div>
+                    <select id="op3op2" name="op1">
+                        <option value="x">X</option>
+                        <option value="y">Y</option>
+                        <option value="z">Screen</option>
+                    </select>
+                </div>
+                <div class="operation">
+                    <div>X:</div>
+                    <input id="varX" type="text" name="var1" value="10">
+                    <div class="button" id="encVarX">Encrypt</div>
+                </div>
+                <div class="operation">
+                    <div>Y:</div>
+                    <input id="varY" type="text" name="var2" value="20">
+                    <div class="button" id="encVarY">Encrypt</div>
+                </div>
+                <div class="operation">
+                    <input type="text" name="keySize" id="keySize" value="1024 bits">
+                    <div class="button" onClick="genKeys()">Generate Keys</div>
+                    <div class="button" onClick="randomize()">Randomize</div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="calc.js"></script>
+    </body>
+</html>

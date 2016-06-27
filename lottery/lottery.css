@@ -1,0 +1,146 @@
+body{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-image: url("dice.jpg");
+    background-size: 250vmin 166.8vmin;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    overflow: hidden;
+}
+.content{
+    height: 100vh;
+    width: 100vmin;
+    margin:auto;
+    top: 0;
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    border:1px solid #000000;
+}
+
+.steps{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.step{
+    position: relative;
+    width: 100%;
+    height: 33vh;
+    left: 0;
+    top: 0;
+    border: 1px solid black;
+}
+
+.line{
+    height: 9vh;
+    margin-top: 0.5vh;
+}
+
+.line *{
+    height: 100%;
+    margin-left: 2%;
+    text-align: center;
+    display: inline-block;
+}
+
+.line .button{
+    width: 30%;
+}
+
+
+
+.vetor{
+    height: 90%;
+    background-color: #222222;
+    border: 1px solid black;
+    width: 60%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    line-height: 6vh;
+}
+
+.descText{
+    height: 100%;
+    width: 30%;
+    vertical-align:middle;
+}
+
+.line input{
+    width: 17%;
+    margin-left: 2%;
+    margin-right: 0;
+}
+
+
+
+.line h{
+    width: 100%;
+    font-size: 3vh;
+    line-height: 9vmin;
+}
+
+.line p{
+    width: 100%;
+    font-size: 2vh;
+    line-height: 5vmin;
+}
+
+.line .button{
+    line-height: 9vh;
+    box-shadow:inset 0px 5vh 0px 0px #b54b3a;
+}
+
+.button {
+    display: block;
+	box-shadow:inset 0px 15vh 0px 0px #b54b3a;
+	background-color:#a73f2d;
+	border:1px solid #241d13;
+	display:inline-block;
+	cursor:pointer;
+    text-align: center;
+    margin-left: 2.4%;
+}
+
+.button:hover {
+	background-color:#b34332;
+}
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+.lineCenter{
+    margin-left: 35%;
+    margin-top: 1vh;
+}
+
+select{
+    background-color: #222222;
+    box-sizing:border-box;
+    border: 1px solid black;
+    border-radius: 0;
+}
+
+*{
+    font-family:Arial;
+	font-size:2.5vmin;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #7a2a1d;
+    color: white;
+    box-sizing:border-box;
+}
+
+input{
+    border-radius: 0;
+    border: 1px solid black;
+    background-color: #222222;
+}
